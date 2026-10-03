@@ -1,0 +1,165 @@
+.app {
+  min-height: 100vh;
+  background: #f2f2f2;
+  color: #222;
+}
+
+header {
+  background: #1b1b1b;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  font-size: 17px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #333;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* efecto al pasar el mouse sobre los productos */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  background: #f5f5f5;
+}
+
+.producto h3 {
+  margin: 15px 0 10px;
+}
+
+.producto p {
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.producto strong {
+  display: block;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: #777;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.carrito {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-carrito {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-carrito img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #f2f2f2;
+}
+
+.mensaje {
+  padding: 20px;
+  background: #e8e8e8;
+  border-radius: 8px;
+}
+
+footer {
+  background: #1b1b1b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  margin: 8px 0;
+}
